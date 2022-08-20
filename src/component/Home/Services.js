@@ -5,19 +5,19 @@ const Services = () => {
 
   const [services, setServices] = useState([]);
 
-  useEffect(() =>{
-    fetch('http://localhost:5000/service')
-    .then(res => res.json())
-    .then(data => setServices(data))
-  },[])
+  useEffect(() => {
+    fetch('https://project-sunsine.herokuapp.com/service')
+      .then(res => res.json())
+      .then(data => setServices(data))
+  }, [])
   return (
     <div>
       <h1 className='text-center text-4xl'>Our services</h1>
       <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1'>
         {
           services.map(service => <Service
-          key={service._id}
-          service={service}
+            key={service._id}
+            service={service}
           ></Service>)
         }
       </div>
