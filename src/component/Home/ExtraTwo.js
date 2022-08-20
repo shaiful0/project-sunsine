@@ -2,7 +2,7 @@ import React from 'react';
 
 const ExtraTwo = () => {
   return (
-    <div class="form-control w-full max-w-xs mt-5 mx-96 items-center">
+    <div class="form-control mt-5  items-center">
       <h4 className='text-3xl font-bold'>Drop Here Message</h4>
       <label class="label">
         <span class="label-text">Name</span>

@@ -8,7 +8,7 @@ const Service = ({ service }) => {
     navigate(`/service/${id}`)
   }
   return (
-    <div class="card w-96 bg-base-100 shadow-xl">
+    <div class="card w-96 bg-base-100 shadow-xl mt-5">
       <figure class="px-10 pt-10">
         <img src={img} alt="Shoes" class="rounded-xl" />
       </figure>
